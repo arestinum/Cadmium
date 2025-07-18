@@ -43,7 +43,6 @@ namespace Cadmium
 
             Application["Application::RouteTrees"] = routeTrees;
             Application["Application::Startup"] = DateTime.Now;
-            RouteTable.Routes.Clear();
         }
     }
 }
