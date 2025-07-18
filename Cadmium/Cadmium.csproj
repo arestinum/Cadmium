@@ -101,6 +101,7 @@
     <Content Include="Routes\Admin\Default.aspx" />
     <Content Include="Routes\Admin\Tabs\Default.aspx" />
     <Content Include="Routes\Admin\Tabs\[Id]\Default.aspx" />
+    <Content Include="Routes\Content\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +145,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Routes\Admin\Tabs\[Id]\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Content\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Content\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
