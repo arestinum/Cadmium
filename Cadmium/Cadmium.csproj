@@ -118,6 +118,7 @@
     <Compile Include="Framework\RouteHandlers\AdminHandler.cs" />
     <Compile Include="Framework\RouteHandlers\EngineHandler.cs" />
     <Compile Include="Framework\RouteHandlers\GatewayHandler.cs" />
+    <Compile Include="Framework\Routing\RouteManager.cs" />
     <Compile Include="Framework\Routing\RouteMetadata.cs" />
     <Compile Include="Framework\Routing\RouteTree.cs" />
     <Compile Include="Framework\Routing\RouteNode.cs" />
