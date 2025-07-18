@@ -21,7 +21,6 @@ namespace Cadmium
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            RouteTable.Routes.Add(new Route("test", new FrameworkRouteHandler()));
             _frameworkApplication.Initialise();
         }
 

@@ -36,6 +36,8 @@ namespace Cadmium
 
         public void Initialise()
         {
+            RouteTable.Routes.Add(new Route("{*route}", new FrameworkRouteHandler()));
+
             List<RouteTree> routeTrees = new List<RouteTree>();
             string[] routes = Directory.GetDirectories(Server.MapPath("~/Routes"));
             foreach (string route in routes)
