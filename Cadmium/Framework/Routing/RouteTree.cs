@@ -45,7 +45,9 @@ namespace Cadmium.Framework.Routing
 
             return new RouteNode()
             {
-                AbsolutePath = path,
+                RelativePath = path.Substring(path.IndexOf("Routes\\")).Replace("\\", "/"),
+                AbsolutePath = path.Replace("\\", "/"),
+                Pattern = Regex.Replace(path.Substring(path.IndexOf("Routes\\")).Replace("\\", "/"), @"\[.{0,}\]", "([^/]+)\")}/?$").ToLower(),
                 FolderName = folderName,
                 Children = childrenPaths.Select(childPath => BuildTree(childPath)).ToList(),
                 Condition = conditions,  
