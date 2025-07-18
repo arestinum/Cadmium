@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Cadmium.Framework.Routing;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization.Metadata;
 using System.Web;
@@ -35,7 +38,15 @@ namespace Cadmium
                 WriteIndented = true
             };
 
-            var data = JsonSerializer.Serialize(new { context.Request.Url, RouteTrees = context.Application["Application::RouteTrees"] }, jsonSerializerOptions);
+            var segments = context.Request.Url.Segments
+                .Select(segment => segment.Trim('/'))
+                .Where(segment => !string.IsNullOrEmpty(segment));
+
+            RouteNode traversed = null;
+            List<RouteTree> routeTrees = (List<RouteTree>)context.Application["Application::RouteTrees"];
+            RouteTree treeOfOrigin = routeTrees.FirstOrDefault(routeTree => routeTree.Root.Name == segments.FirstOrDefault());
+
+            var data = JsonSerializer.Serialize(new { segments, treeOfOrigin, routeTrees }, jsonSerializerOptions);
             context.Response.ContentType = "application/json"; 
             context.Response.Write(data);
         }
