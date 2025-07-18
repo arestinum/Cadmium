@@ -10,7 +10,7 @@ namespace Cadmium
     {
         public IHttpHandler GetHttpHandler(RequestContext requestContext)
         {
-            FrameworkHandler frameworkHandler = new FrameworkHandler(requestContext.RouteData);
+            FrameworkHandler frameworkHandler = new FrameworkHandler();
 
             return frameworkHandler;
         }

@@ -10,10 +10,7 @@ namespace Cadmium
 {
     public class FrameworkHandler : IHttpHandler
     {
-        public RouteData RouteInformation { get; set; }
-            
-        public FrameworkHandler(RouteData routeData) {
-            RouteInformation = routeData;
+        public FrameworkHandler() {
         }
 
         /// <summary>
@@ -38,7 +35,7 @@ namespace Cadmium
                 WriteIndented = true
             };
 
-            var data = JsonSerializer.Serialize(new { context.Request.Url }, jsonSerializerOptions);
+            var data = JsonSerializer.Serialize(new { context.Request.Url, RouteTrees = context.Application["Application::RouteTrees"] }, jsonSerializerOptions);
             context.Response.ContentType = "application/json"; 
             context.Response.Write(data);
         }
