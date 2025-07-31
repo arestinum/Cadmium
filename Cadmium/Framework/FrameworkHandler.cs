@@ -40,7 +40,10 @@ namespace Cadmium
 
             var segments = context.Request.Url.Segments
                 .Select(segment => segment.Trim('/'))
-                .Where(segment => !string.IsNullOrEmpty(segment));
+                .Where(segment => !string.IsNullOrEmpty(segment))
+                .ToList();
+
+            if (segments.Count() == 0) segments.Add("/");
 
             RouteNode traversed = null;
             List<RouteTree> routeTrees = (List<RouteTree>)context.Application["Application::RouteTrees"];
