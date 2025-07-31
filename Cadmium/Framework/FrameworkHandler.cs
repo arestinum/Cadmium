@@ -45,11 +45,16 @@ namespace Cadmium
 
             if (segments.Count() == 0) segments.Add("/");
 
-            RouteNode traversed = null;
             List<RouteTree> routeTrees = (List<RouteTree>)context.Application["Application::RouteTrees"];
             RouteTree treeOfOrigin = routeTrees.FirstOrDefault(routeTree => routeTree.Root.Name == segments.FirstOrDefault());
+            RouteNode traversed = null;
 
-            var data = JsonSerializer.Serialize(new { segments, treeOfOrigin, routeTrees }, jsonSerializerOptions);
+            foreach (var segment in segments)
+            {
+                traversed = treeOfOrigin.Root.Children.FirstOrDefault(child => child.Name == segment);
+            }
+
+            var data = JsonSerializer.Serialize(new { segments, traversed, treeOfOrigin, routeTrees }, jsonSerializerOptions);
             context.Response.ContentType = "application/json"; 
             context.Response.Write(data);
         }
