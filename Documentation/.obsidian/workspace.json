@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A08082025-135433"
+              "title": "A08082025-161558"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for A08082025-135433"
+              "title": "Backlinks for A08082025-161558"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from A08082025-135433"
+              "title": "Outgoing links from A08082025-161558"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of A08082025-135433"
+              "title": "Outline of A08082025-161558"
             }
           }
         ],
@@ -190,6 +190,8 @@
   },
   "active": "7fa774f9ad8a0308",
   "lastOpenFiles": [
+    "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+    "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
     "Cadmium/Cadmium.md",
     "Documentation.md",
     "Obsidian Usage.md",
@@ -198,7 +200,6 @@
     "Cadmium/Project Standards.md",
     "Vault Configuration/Vault Configuration.md",
     "Cadmium/Architecture/Thinking/Audits.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
     "Vault Configuration/Templater/Templates/Architecture Audit.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-140945.md",
     "t.md",
@@ -219,7 +220,6 @@
     "Cadmium/Architecture/Thinking/Audits/A08082025-131425.md",
     "Vault Configuration/Templater/Scripts/architectureAuditFrontmatter.js",
     "Cadmium/Architecture/Thinking/Audits/A08082025-130957.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130945.md",
     "Vault Configuration/Templater/Scripts/architectureAudit.js",
     "Vault Configuration/Templater/Scripts/test.js",
     "Vault Configuration/Templater/Scripts/assignFrontmatter.js",

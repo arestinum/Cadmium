@@ -29,6 +29,7 @@ There is consideration for a .NET Core version of this framework.
 	- **Thinking**
 		- **Audits**
 			- [[A08082025-135433]]
+			- [[A08082025-161558]]
 		- [[Audits]]
 		- **Notes**
 		- **Synthesis**

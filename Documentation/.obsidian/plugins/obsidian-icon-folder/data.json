@@ -46,5 +46,8 @@
   "Documentation.md": {
     "iconName": "LiBook"
   },
-  "Obsidian Usage.md": "LiRuler"
+  "Obsidian Usage.md": "LiRuler",
+  "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md": {
+    "iconName": "LiPen"
+  }
 }
