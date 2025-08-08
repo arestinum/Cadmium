@@ -2,14 +2,19 @@
 tags:
   - cadmium
 ---
+# What is this Project
 Cadmium is a custom framework targeting ASP.NET Framework. 
 
 It targets the latest version of this technology.
 
 It is an experimental project, practicing architectural design, the technology ground, project practices and code practices.
 
+# Goal of the Project
+
+
 ---
 # Table of Contents
+---
 
 %% Begin Waypoint %%
 - **Architecture**
@@ -26,6 +31,8 @@ It is an experimental project, practicing architectural design, the technology g
 		- **Notes**
 		- **Synthesis**
 - [[Code Formatting Standard]]
+- [[Code Principles Standard]]
+- [[Project Standards]]
 - **Projects**
 	- **Admin**
 	- **Content**
