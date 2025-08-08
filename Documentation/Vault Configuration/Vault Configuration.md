@@ -2,9 +2,11 @@
 - **Excalidraw**
 	- **Scripts**
 	- **Templates**
+- **QuickAdd**
+	- **Templates**
 - **Templater**
 	- **Scripts**
 	- **Templates**
-		- [[Audit]]
+		- [[Architecture Audit]]
 
 %% End Waypoint %%

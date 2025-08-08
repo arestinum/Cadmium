@@ -21,6 +21,7 @@ It is an experimental project, practicing architectural design, the technology g
 		- **Routing**
 	- **Thinking**
 		- **Audits**
+		- [[Audits]]
 		- **Notes**
 		- **Synthesis**
 - [[Code Formatting Standard]]
