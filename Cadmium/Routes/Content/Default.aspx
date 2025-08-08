@@ -1,15 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Cadmium.Routes.Content.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Cadmium.Routes.Content.Default" MasterPageFile="~/Routes/Content/DefaultContentLayout.Master" Title="Home page" %>
 
-<!DOCTYPE html>
+<asp:Content ContentPlaceHolderID="MainContent" ID="MainContent" runat="server">
+    <div class="py-6 px-8">
+        <p class="m-0">This is the default page</p>
+    </div>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>

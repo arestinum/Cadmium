@@ -118,14 +118,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Layout\Footer.ascx" />
+    <Content Include="Layout\Header.ascx" />
     <Content Include="Routes\Admin\Default.aspx" />
     <Content Include="Routes\Admin\Tabs\Default.aspx" />
     <Content Include="Routes\Admin\Tabs\[Id]\Default.aspx" />
     <Content Include="Routes\Content\Default.aspx" />
+    <Content Include="Routes\Content\[Tab]\Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
+    <Compile Include="Framework\Attributes\HttpContext.cs" />
+    <Compile Include="Framework\Attributes\HttpDelete.cs" />
+    <Compile Include="Framework\Attributes\HttpGet.cs" />
+    <Compile Include="Framework\Attributes\HttpPost.cs" />
+    <Compile Include="Framework\Attributes\HttpPut.cs" />
+    <Compile Include="Framework\Attributes\GatewayNode.cs" />
     <Compile Include="Framework\FrameworkHandler.cs" />
     <Compile Include="Framework\FrameworkRouteHandler.cs" />
     <Compile Include="Framework\RouteHandlers\AdminHandler.cs" />
@@ -138,6 +147,20 @@
     <Compile Include="Framework\Routing\RouteNodeConditions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Routes\Admin\Default.aspx.cs">
@@ -168,12 +191,36 @@
     <Compile Include="Routes\Content\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Routes\Content\DefaultContentLayout.Master.cs">
+      <DependentUpon>DefaultContentLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Content\DefaultContentLayout.Master.designer.cs">
+      <DependentUpon>DefaultContentLayout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Content\[Tab]\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\Content\[Tab]\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Routes\Gateway\Routes\Server.cs" />
+    <Compile Include="Routes\GlobalLayout.Master.cs">
+      <DependentUpon>GlobalLayout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Routes\GlobalLayout.Master.designer.cs">
+      <DependentUpon>GlobalLayout.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Routes\Gateway\metadata.json" />
     <Content Include="Routes\Content\metadata.json" />
     <Content Include="Routes\Admin\metadata.json" />
+    <Content Include="Routes\Content\DefaultContentLayout.Master" />
+    <Content Include="Routes\GlobalLayout.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,7 +228,32 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Cadmium.Framework.Admin\Cadmium.Framework.Admin.csproj">
+      <Project>{78a49541-c681-47b6-b277-8282492aac06}</Project>
+      <Name>Cadmium.Framework.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadmium.Framework.Content\Cadmium.Framework.Content.csproj">
+      <Project>{6eca5088-e8b6-4568-8d20-026bbcd08813}</Project>
+      <Name>Cadmium.Framework.Content</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadmium.Framework.Diagnostics\Cadmium.Framework.Diagnostics.csproj">
+      <Project>{42771f5f-f850-49b1-8b35-68a9c92f5445}</Project>
+      <Name>Cadmium.Framework.Diagnostics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadmium.Framework.Routing\Cadmium.Framework.Routing.csproj">
+      <Project>{2436da1b-2695-4941-8273-2c70f6066ff9}</Project>
+      <Name>Cadmium.Framework.Routing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadmium.Framework.Services\Cadmium.Framework.Gateway.csproj">
+      <Project>{19c09ab7-7ec9-45af-870d-a0890e82954a}</Project>
+      <Name>Cadmium.Framework.Gateway</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cadmium.Framework\Cadmium.Framework.csproj">
+      <Project>{7d3c6beb-8332-49f4-951d-5ed5739532f2}</Project>
+      <Name>Cadmium.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

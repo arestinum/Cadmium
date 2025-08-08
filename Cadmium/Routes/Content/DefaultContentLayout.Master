@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultContentLayout.master.cs" Inherits="Cadmium.Routes.Content.DefaultContentLayout" MasterPageFile="~/Routes/GlobalLayout.Master" %>
+<%@ Register Src="~/Layout/Header.ascx" TagPrefix="Layout" TagName="Header" %>
+<%@ Register Src="~/Layout/Footer.ascx" TagPrefix="Layout" TagName="Footer" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="head"/>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <Layout:Header runat="server" />
+    <asp:ContentPlaceHolder runat="server" ID="MainContent"/>
+    <Layout:Footer runat="server" />
+</asp:Content>

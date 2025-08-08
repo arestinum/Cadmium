@@ -1,12 +1,9 @@
 ﻿using Cadmium.Framework.Routing;
-using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text.Json;
-using System.Text.Json.Serialization.Metadata;
 using System.Web;
-using System.Web.Routing;
-using System.Web.Services.Description;
 using System.Web.UI;
 
 namespace Cadmium
@@ -47,16 +44,42 @@ namespace Cadmium
 
             List<RouteTree> routeTrees = (List<RouteTree>)context.Application["Application::RouteTrees"];
             RouteTree treeOfOrigin = routeTrees.FirstOrDefault(routeTree => routeTree.Root.Name == segments.FirstOrDefault());
-            RouteNode traversed = null;
+            RouteNode traversed = treeOfOrigin.Root;
 
             foreach (var segment in segments)
             {
-                traversed = treeOfOrigin.Root.Children.FirstOrDefault(child => child.Name == segment);
+                var identified = traversed.Children.FirstOrDefault(child => child.Name == segment);
+                if (identified == null) break;
+                traversed = identified;
             }
 
-            var data = JsonSerializer.Serialize(new { segments, traversed, treeOfOrigin, routeTrees }, jsonSerializerOptions);
-            context.Response.ContentType = "application/json"; 
-            context.Response.Write(data);
+            if (context.Request["view"] == "application::namespace")
+            {
+                var assembly = Assembly.GetAssembly(GetType());
+                var data = JsonSerializer.Serialize(
+                    assembly.ExportedTypes
+                        .Where(type => type.Namespace.StartsWith("Cadmium.Routes.Gateway"))
+                        .Select(type => new { type.Namespace, type.Name }), 
+                    jsonSerializerOptions
+                );
+                context.Response.ContentType = "application/json";
+                context.Response.Write(data);
+                return;
+            }
+
+            if (context.Request["view"] == "application::internal")
+            { 
+                var data = JsonSerializer.Serialize(new { segments, traversed, treeOfOrigin, routeTrees }, jsonSerializerOptions);
+                context.Response.ContentType = "application/json"; 
+                context.Response.Write(data);
+                return;
+            }
+
+            if (traversed.Condition.HasDefault)
+            {
+                var instance = PageParser.GetCompiledPageInstance($"{traversed.RelativePath}/Default.aspx", null, context);
+                instance.ProcessRequest(context);
+            }
         }
 
         #endregion
