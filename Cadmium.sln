@@ -5,6 +5,18 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium", "Cadmium\Cadmium.csproj", "{49BA7B95-3A35-4A91-A03F-79E7FA95BC6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium.Framework", "Cadmium.Framework\Cadmium.Framework.csproj", "{7D3C6BEB-8332-49F4-951D-5ED5739532F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium.Framework.Gateway", "Cadmium.Framework.Services\Cadmium.Framework.Gateway.csproj", "{19C09AB7-7EC9-45AF-870D-A0890E82954A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium.Framework.Routing", "Cadmium.Framework.Routing\Cadmium.Framework.Routing.csproj", "{2436DA1B-2695-4941-8273-2C70F6066FF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium.Framework.Diagnostics", "Cadmium.Framework.Diagnostics\Cadmium.Framework.Diagnostics.csproj", "{42771F5F-F850-49B1-8B35-68A9C92F5445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium.Framework.Admin", "Cadmium.Framework.Admin\Cadmium.Framework.Admin.csproj", "{78A49541-C681-47B6-B277-8282492AAC06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmium.Framework.Content", "Cadmium.Framework.Content\Cadmium.Framework.Content.csproj", "{6ECA5088-E8B6-4568-8D20-026BBCD08813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +27,30 @@ Global
 		{49BA7B95-3A35-4A91-A03F-79E7FA95BC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49BA7B95-3A35-4A91-A03F-79E7FA95BC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49BA7B95-3A35-4A91-A03F-79E7FA95BC6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3C6BEB-8332-49F4-951D-5ED5739532F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3C6BEB-8332-49F4-951D-5ED5739532F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3C6BEB-8332-49F4-951D-5ED5739532F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3C6BEB-8332-49F4-951D-5ED5739532F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C09AB7-7EC9-45AF-870D-A0890E82954A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C09AB7-7EC9-45AF-870D-A0890E82954A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C09AB7-7EC9-45AF-870D-A0890E82954A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C09AB7-7EC9-45AF-870D-A0890E82954A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2436DA1B-2695-4941-8273-2C70F6066FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2436DA1B-2695-4941-8273-2C70F6066FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2436DA1B-2695-4941-8273-2C70F6066FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2436DA1B-2695-4941-8273-2C70F6066FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42771F5F-F850-49B1-8B35-68A9C92F5445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42771F5F-F850-49B1-8B35-68A9C92F5445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42771F5F-F850-49B1-8B35-68A9C92F5445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42771F5F-F850-49B1-8B35-68A9C92F5445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A49541-C681-47B6-B277-8282492AAC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A49541-C681-47B6-B277-8282492AAC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A49541-C681-47B6-B277-8282492AAC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A49541-C681-47B6-B277-8282492AAC06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECA5088-E8B6-4568-8D20-026BBCD08813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECA5088-E8B6-4568-8D20-026BBCD08813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECA5088-E8B6-4568-8D20-026BBCD08813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECA5088-E8B6-4568-8D20-026BBCD08813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
