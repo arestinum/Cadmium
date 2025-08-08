@@ -4,22 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0b5b5aba83ca48a0",
+        "id": "61b1b3e41c49f8e7",
         "type": "tabs",
         "children": [
           {
-            "id": "d71e2101ca8e13ae",
+            "id": "7fa774f9ad8a0308",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "Documentation/Vault Configuration/Vault Configuration.md",
-                "bFile": "Documentation/Vault Configuration/Vault Configuration.md",
-                "aRef": "HEAD",
-                "bRef": ""
+                "aFile": "Documentation/.obsidian/plugins/omnisearch/main.js",
+                "bFile": "Documentation/.obsidian/plugins/omnisearch/main.js",
+                "aRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Vault Configuration"
+              "title": "Diff: main.js"
             }
           }
         ]
@@ -88,7 +87,6 @@
       {
         "id": "423504f484fade23",
         "type": "tabs",
-        "dimension": 70.35928143712574,
         "children": [
           {
             "id": "8eb846ac9de0684a",
@@ -96,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cadmium.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Cadmium"
+              "title": "Backlinks"
             }
           },
           {
@@ -115,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cadmium.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Cadmium"
+              "title": "Outgoing links"
             }
           },
           {
@@ -144,15 +140,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cadmium.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Cadmium"
+              "title": "Outline"
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "d872156ac6da4f19",
+        "type": "tabs",
+        "children": [
           {
             "id": "ba6f000bba07d58b",
             "type": "leaf",
@@ -161,24 +163,6 @@
               "state": {},
               "icon": "git-pull-request",
               "title": "Source Control"
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "3c80106880abeecf",
-        "type": "tabs",
-        "dimension": 29.640718562874248,
-        "children": [
-          {
-            "id": "124fa5824bc87999",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
             }
           }
         ]
@@ -201,17 +185,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d71e2101ca8e13ae",
+  "active": "7fa774f9ad8a0308",
   "lastOpenFiles": [
+    "Documentation.md",
+    "Obsidian Usage.md",
+    "Cadmium/Cadmium.md",
+    "Cadmium/Code Formatting Standard.md",
+    "Cadmium/Code Principles Standard.md",
+    "Cadmium/Project Standards.md",
+    "Vault Configuration/Vault Configuration.md",
     "Cadmium/Architecture/Thinking/Audits.md",
+    "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
     "Vault Configuration/Templater/Templates/Architecture Audit.md",
+    "Cadmium/Architecture/Thinking/Audits/A08082025-140945.md",
+    "t.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-132541.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-132417.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-134049.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-134011.md",
-    "Obsidian Usage.md",
-    "Cadmium/Code Formatting Standard.md",
-    "Documentation.md",
     "Vault Configuration/QuickAdd/Templates/Untitled.md",
     "Vault Configuration/QuickAdd/Templates",
     "Vault Configuration/QuickAdd",
@@ -226,13 +217,6 @@
     "Vault Configuration/Templater/Scripts/architectureAuditFrontmatter.js",
     "Cadmium/Architecture/Thinking/Audits/A08082025-130957.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-130945.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130732.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130809.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130649.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130615.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130640.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130542.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130550.md",
     "Vault Configuration/Templater/Scripts/architectureAudit.js",
     "Vault Configuration/Templater/Scripts/test.js",
     "Vault Configuration/Templater/Scripts/assignFrontmatter.js",

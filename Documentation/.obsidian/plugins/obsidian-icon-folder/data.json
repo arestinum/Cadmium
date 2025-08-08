@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiInfo",
-      "🦄",
-      "LiPencilLine",
-      "LiBookTemplate",
-      "LiBook"
+      "LiRuler",
+      "LiBook",
+      "LiCog",
+      "LiPen",
+      "LiAArrowUp"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -23,7 +23,7 @@
     "iconInTabsEnabled": false,
     "iconInTitleEnabled": false,
     "iconInTitlePosition": "above",
-    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterEnabled": true,
     "iconInFrontmatterFieldName": "icon",
     "iconColorInFrontmatterFieldName": "iconColor",
     "iconsBackgroundCheckEnabled": false,
@@ -37,12 +37,14 @@
   "Cadmium": "LiGanttChart",
   "Cadmium/Architecture": "LiCog",
   "Cadmium/Projects": "LiTarget",
-  "Cadmium/Cadmium.md": "LiInfo",
   "Vault Configuration": "LiCog",
-  "Documentation.md": "LiBuilding2",
-  "Obsidian Usage.md": "LiBook",
   "Vault Configuration/Templater": "LiBookTemplate",
   "Vault Configuration/Excalidraw": "LiPencilLine",
-  "Vault Configuration/Vault Configuration.md": "LiInfo",
-  "Cadmium/Code Formatting Standard.md": "LiPenLine"
+  "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md": {
+    "iconName": "LiPen"
+  },
+  "Documentation.md": {
+    "iconName": "LiBook"
+  },
+  "Obsidian Usage.md": "LiRuler"
 }
