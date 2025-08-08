@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "61b1b3e41c49f8e7",
+        "id": "a21faeab9114513d",
         "type": "tabs",
         "children": [
           {
-            "id": "7fa774f9ad8a0308",
+            "id": "dc67c7664b291400",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Documentation/Cadmium/Cadmium.md",
+                "bFile": "Documentation/Cadmium/Cadmium.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "A08082025-161558"
+              "icon": "diff",
+              "title": "Diff: Cadmium"
             }
           }
         ]
@@ -94,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for A08082025-161558"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from A08082025-161558"
+              "title": "Outgoing links"
             }
           },
           {
@@ -142,13 +140,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of A08082025-161558"
+              "title": "Outline"
             }
           }
         ],
@@ -188,10 +185,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "7fa774f9ad8a0308",
+  "active": "dc67c7664b291400",
   "lastOpenFiles": [
-    "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+    "Cadmium/Architecture/Thinking/Audits/A08082025-161952.md",
+    "Cadmium/Architecture/Thinking/Audits.md",
+    "Cadmium/Projects/Routing/Tree.md",
+    "Cadmium/Projects/Routing/Router.md",
+    "Cadmium/Projects/Routing/Manager.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-161558.md",
+    "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
     "Cadmium/Cadmium.md",
     "Documentation.md",
     "Obsidian Usage.md",
@@ -199,7 +201,6 @@
     "Cadmium/Code Principles Standard.md",
     "Cadmium/Project Standards.md",
     "Vault Configuration/Vault Configuration.md",
-    "Cadmium/Architecture/Thinking/Audits.md",
     "Vault Configuration/Templater/Templates/Architecture Audit.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-140945.md",
     "t.md",
@@ -214,12 +215,8 @@
     "Cadmium/Architecture/Thinking/Audits/A08082025-130854.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-132157.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-132104.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-132055.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-131929.md",
     "Vault Configuration/Templater/Scripts/t.js",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-131425.md",
     "Vault Configuration/Templater/Scripts/architectureAuditFrontmatter.js",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130957.md",
     "Vault Configuration/Templater/Scripts/architectureAudit.js",
     "Vault Configuration/Templater/Scripts/test.js",
     "Vault Configuration/Templater/Scripts/assignFrontmatter.js",
