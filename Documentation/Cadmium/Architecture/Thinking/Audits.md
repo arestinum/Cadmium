@@ -1,5 +1,10 @@
 ---
-date: 2025-08-08
 tags:
   - audit
 ---
+```dataview 
+TABLE
+	title AS "Title",
+	datetime AS "Detailed Date"
+FROM "Cadmium/Architecture/Thinking/Audits"
+```
