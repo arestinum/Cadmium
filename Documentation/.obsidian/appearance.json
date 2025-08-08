@@ -3,5 +3,6 @@
   "interfaceFontFamily": "Inter",
   "textFontFamily": "Inter",
   "monospaceFontFamily": "JetBrains Mono",
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "showViewHeader": true
 }
