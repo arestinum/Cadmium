@@ -11,14 +11,15 @@
             "id": "d71e2101ca8e13ae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Vault Configuration/Templater/Templates/Architecture Audit.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Documentation/Vault Configuration/Vault Configuration.md",
+                "bFile": "Documentation/Vault Configuration/Vault Configuration.md",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Architecture Audit"
+              "icon": "diff",
+              "title": "Diff: Vault Configuration"
             }
           }
         ]
@@ -163,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       },
       {
         "id": "3c80106880abeecf",
@@ -202,11 +203,12 @@
   },
   "active": "d71e2101ca8e13ae",
   "lastOpenFiles": [
+    "Cadmium/Architecture/Thinking/Audits.md",
+    "Vault Configuration/Templater/Templates/Architecture Audit.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-132541.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-132417.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-134049.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-134011.md",
-    "Vault Configuration/Templater/Templates/Architecture Audit.md",
     "Obsidian Usage.md",
     "Cadmium/Code Formatting Standard.md",
     "Documentation.md",
@@ -231,7 +233,6 @@
     "Cadmium/Architecture/Thinking/Audits/A08082025-130640.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-130542.md",
     "Cadmium/Architecture/Thinking/Audits/A08082025-130550.md",
-    "Cadmium/Architecture/Thinking/Audits/A08082025-130319.md",
     "Vault Configuration/Templater/Scripts/architectureAudit.js",
     "Vault Configuration/Templater/Scripts/test.js",
     "Vault Configuration/Templater/Scripts/assignFrontmatter.js",
