@@ -129,12 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="Framework\Attributes\HttpContext.cs" />
-    <Compile Include="Framework\Attributes\HttpDelete.cs" />
-    <Compile Include="Framework\Attributes\HttpGet.cs" />
-    <Compile Include="Framework\Attributes\HttpPost.cs" />
-    <Compile Include="Framework\Attributes\HttpPut.cs" />
-    <Compile Include="Framework\Attributes\GatewayNode.cs" />
     <Compile Include="Framework\FrameworkHandler.cs" />
     <Compile Include="Framework\FrameworkRouteHandler.cs" />
     <Compile Include="Framework\RouteHandlers\AdminHandler.cs" />

@@ -1,7 +1,7 @@
 ﻿namespace Cadmium.Framework.Gateway
 {
-    public class Class1
-    {
+        public class Class1
+        {
 
-    }
+        }
 }

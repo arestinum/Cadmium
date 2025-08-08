@@ -1,7 +1,7 @@
 ﻿namespace Cadmium.Framework.Content
 {
-    public class Class1
-    {
+        public class Class1
+        {
 
-    }
+        }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Cadmium.Framework.Attributes
+namespace Cadmium.Framework
 {
-    public class HttpPut
+    public class HttpDelete
     {
     }
 }
