@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace Cadmium.Framework.Routing.Nodes
 {
-        internal class ViewNode : INode
+        public class ViewNode : INode
         {
-                public List<ViewNode> Children { get; set; } = new List<ViewNode>();
+                public List<INode> Children { get; set; } = new List<INode>();
 
-                public string Name => string.Empty;
+                public string Name { get; set; }
 
                 public Dictionary<string, string> Parameters { get; set; }
                 
                 public NodeMetadata Metadata { get; set; }
+
+                public string RelativePath { get; set; }
+                
+                public INodeConditions Condition { get; set; }
         }
 }

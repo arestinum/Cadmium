@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cadmium.Framework.Routing
 {
-        internal class Manager
+        public class Manager
         {
                 public Manager() { }
 

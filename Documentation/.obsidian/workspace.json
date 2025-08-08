@@ -11,14 +11,14 @@
             "id": "7fa774f9ad8a0308",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Documentation/.obsidian/plugins/omnisearch/main.js",
-                "bFile": "Documentation/.obsidian/plugins/omnisearch/main.js",
-                "aRef": ""
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: main.js"
+              "icon": "lucide-file",
+              "title": "A08082025-135433"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for A08082025-135433"
             }
           },
           {
@@ -112,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from A08082025-135433"
             }
           },
           {
@@ -140,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Cadmium/Architecture/Thinking/Audits/A08082025-135433.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of A08082025-135433"
             }
           }
         ],
@@ -187,9 +190,9 @@
   },
   "active": "7fa774f9ad8a0308",
   "lastOpenFiles": [
+    "Cadmium/Cadmium.md",
     "Documentation.md",
     "Obsidian Usage.md",
-    "Cadmium/Cadmium.md",
     "Cadmium/Code Formatting Standard.md",
     "Cadmium/Code Principles Standard.md",
     "Cadmium/Project Standards.md",

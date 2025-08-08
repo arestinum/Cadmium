@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Cadmium.Framework.Routing.Nodes
 {
-        public class NodeMetadata
+        internal class NodeConditions
         {
-                public string Name { get; set; }
+                public bool HasDynamicRoute { get; set; }
+                public bool HasDefault { get; set; }
         }
 }

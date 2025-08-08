@@ -1,10 +1,15 @@
-﻿using System.Web;
+﻿using Cadmium.Framework.Routing;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Web;
+using System.Web.Routing;
 
 namespace Cadmium.Framework
 {
-        public class CadmiumApplication
+        public class FrameworkApplication
         {
-                public CadmiumApplication() { }
+                public FrameworkApplication() { }
 
                 public HttpContext Context { get; set; }
 
@@ -22,6 +27,14 @@ namespace Cadmium.Framework
                         {
                                 return Context.Server;
                         }
+                }
+
+                public void Initialise()
+                {
+                        Router router = new Router();
+                        Application["Framework::Router"] = router;
+
+                        RouteTable.Routes.Add("Application", new Route("{*route}", new FrameworkRouteHandler()));
                 }
         }
 }

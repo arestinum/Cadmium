@@ -5,53 +5,49 @@ using System.Web;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using Cadmium.Framework;
 
 namespace Cadmium
 {
-    public class Global : HttpApplication
-    {
-        private FrameworkApplication _frameworkApplication;
-
-        public Global() {
-            _frameworkApplication = new FrameworkApplication
-            {
-                Context = HttpContext.Current
-            };
-        }
-
-        protected void Application_Start(object sender, EventArgs e)
+        public class Global : HttpApplication
         {
-            _frameworkApplication.Initialise();
+                protected void Application_Start(object sender, EventArgs e)
+                {
+                        FrameworkApplication _frameworkApplication = new FrameworkApplication()
+                        {
+                                Context = HttpContext.Current,
+                        };
+                        _frameworkApplication.Initialise();
+                }
+
+                protected void Session_Start(object sender, EventArgs e)
+                {
+
+                }
+
+                protected void Application_BeginRequest(object sender, EventArgs e)
+                {
+
+                }
+
+                protected void Application_AuthenticateRequest(object sender, EventArgs e)
+                {
+
+                }
+
+                protected void Application_Error(object sender, EventArgs e)
+                {
+
+                }
+
+                protected void Session_End(object sender, EventArgs e)
+                {
+
+                }
+
+                protected void Application_End(object sender, EventArgs e)
+                {
+
+                }
         }
-
-        protected void Session_Start(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_BeginRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_AuthenticateRequest(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_Error(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Session_End(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Application_End(object sender, EventArgs e)
-        {
-
-        }
-    }
 }

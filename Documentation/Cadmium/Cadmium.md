@@ -10,7 +10,9 @@ It targets the latest version of this technology.
 It is an experimental project, practicing architectural design, the technology ground, project practices and code practices.
 
 # Goal of the Project
+Create a bridge framework that lets teams adopt modern development practices within ASP.NET Framework projects, while providing a clear path to migrate to newer technologies.
 
+There is consideration for a .NET Core version of this framework.
 
 ---
 # Table of Contents
