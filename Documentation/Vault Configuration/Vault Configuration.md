@@ -1,3 +1,6 @@
+# Table of Content
+---
+
 %% Begin Waypoint %%
 - **Excalidraw**
 	- **Scripts**
