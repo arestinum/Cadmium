@@ -21,6 +21,7 @@ It is an experimental project, practicing architectural design, the technology g
 		- **Routing**
 	- **Thinking**
 		- **Audits**
+			- [[A08082025-135433]]
 		- [[Audits]]
 		- **Notes**
 		- **Synthesis**
