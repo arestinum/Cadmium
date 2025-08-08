@@ -2,7 +2,8 @@
 const initialFrontmatter = {
 	title: "",
 	datetime: moment().toJSON(),
-	tags: ["audit/architecture"]
+	tags: ["audit/architecture"],
+	icon: 'LiPen'
 };
 
 initialFrontmatter.title = await tp.system.prompt("Brief name for this audit note");
